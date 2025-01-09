@@ -1,0 +1,153 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family : 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    min-height : 100vh;
+    background-image: url(coffee.webp);
+    background-size:cover;
+    padding : 10px;
+}
+
+.to-do-app{
+    width:100%;
+    max-width:540px;
+    background:rgba(99, 137, 105, 0.8);
+    margin:3rem auto 2rem;
+    padding: 2rem 3rem 7rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.to-do-app h2{
+    color:black;
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.to-do-app h2 i{
+    width:30px;
+    margin-left:10px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(65, 90, 63);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom : 25px;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding:10px;
+    font-weight: 14px;
+   color:white;
+}
+
+#add{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:rgb(40, 49, 41);
+    border-radius:40px;
+    color:beige;
+
+}
+
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+}
+
+ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background-image:url(image-removebg-preview.png);
+    background-size:cover;
+    background-position: center;
+    left:10px;
+    bottom:8px;
+}
+
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:#555;
+    line-height:40px;
+    text-align:center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #a1ddb2;
+}
+
+.Quotes{
+    margin :40px 30px 20px 40px;
+}
+
+.quote-box {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+  
+  #quote {
+    color: #000000;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+  }
+  #author {
+    float: right;
+    color: #252424;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    font-size:15px;
+  }
+  
+  #btn {
+    align-self: center;
+    outline:none;
+    padding: 10px 15px;
+    color: #282828;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #btn:focus {
+    outline: none;
+  }
